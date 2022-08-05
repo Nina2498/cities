@@ -55,8 +55,22 @@ class CitiesHomePage extends StatelessWidget {
                             child: GridTile(
                              child: Image.network(listofCities[index]
                              ["image"].toString()),
+
+                            footer: Container(
+                                          padding: EdgeInsets.all(8),
+                                          color: Colors.blue.withOpacity(.5),
+                                          child: Text(
+                                          listofCities[index]["id"].toString(),
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontSize: 24,
+                                            ),
+                                          ),
+                                        ),
                              
                     ), 
+                    
                      ) 
                      );
                   }
@@ -90,18 +104,18 @@ class CitiesHomePage extends StatelessWidget {
 //                               ["image"].toString()),
 //                 fit: BoxFit.cover,
 //               ),
-//               footer: Container(
-//                 padding: EdgeInsets.all(8),
-//                 color: Colors.blue.withOpacity(.5),
-//                 child: Text(
-//                  listofCities[index]["id"].toString(),
-//                   style: TextStyle(
-//                     fontWeight: FontWeight.bold,
-//                     color: Colors.white,
-//                     fontSize: 24,
-//                   ),
-//                 ),
-//               ),
+              // footer: Container(
+              //   padding: EdgeInsets.all(8),
+              //   color: Colors.blue.withOpacity(.5),
+              //   child: Text(
+              //    listofCities[index]["id"].toString(),
+              //     style: TextStyle(
+              //       fontWeight: FontWeight.bold,
+              //       color: Colors.white,
+              //       fontSize: 24,
+              //     ),
+              //   ),
+              // ),
 //             ),
 //           ),
 //         ),
